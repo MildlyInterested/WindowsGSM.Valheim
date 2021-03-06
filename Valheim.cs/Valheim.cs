@@ -144,6 +144,7 @@ namespace WindowsGSM.Plugins
                 else
                 {
                     Functions.ServerConsole.SetMainWindow(p.MainWindowHandle);
+                    System.Threading.Thread.Sleep(30000);
                     Functions.ServerConsole.SendWaitToMainWindow("^c");
                 }
             });
